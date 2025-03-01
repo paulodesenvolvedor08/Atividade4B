@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <h1>Cadastro de Pessoas</h1>
+    <img src="logo.3fd3099d4d22472cb384.png" alt="logo do IFRN" class="logo">
+</header>
+
+<!-- Menu de Navegação -->
+<nav>
+    <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+        <li><a href="registros.html" >Registros Das pessoas</a></li>
+    </ul>
+</nav>
+
+<!-- Área Principal -->
+<main>
+    <section class="cadastro">
+        <h2>Cadastro</h2>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <button type="submit">Gravar</button>
+        </form>
+
+        <h2>Lista de Cadastrados</h2>
+        <table>
+            <caption>Registros de Pessoas Cadastradas</caption>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João Silva</td>
+                        <td>joao.silva@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Oliveira</td>
+                        <td>maria.oliveira@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Souza</td>
+                        <td>pedro.souza@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Costa</td>
+                        <td>ana.costa@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Martins</td>
+                        <td>lucas.martins@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fernanda Lima</td>
+                        <td>fernanda.lima@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Pereira</td>
+                        <td>carlos.pereira@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Juliana Rocha</td>
+                        <td>juliana.rocha@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel Almeida</td>
+                        <td>gabriel.almeida@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Larissa Silva</td>
+                        <td>larissa.silva@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            </thead>
+            <tbody id="tabelaCadastro">
+                <!-- Registros serão inseridos aqui -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <p>IFRN Campus Santa Cruz</p>
+    <p>| Trabalho de Autoria Web |</p>
+    <p> Prof. Marcelo Figueiredo Barbosa Júnior</p>
+    <p>Integrantes</p>
+    <p>Paulo Henrique Oliveira Silva</p>
+    <p>Lara Emanuelly Oliveira Araujo</p>
+    <p>Ruan Gabriel Oliveira Vicente</p>
+    <p>Matheus Mendes Vicente</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
